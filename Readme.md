@@ -26,19 +26,24 @@ There are also a number of bugs that i have found while coding that i did not ha
 I didn't have time to fully complete the sh file that I wanted to make to allow for easy installation. I do apologize for that as well
 
 # Requirements
-docker
-docker compose
-docker buildx (needed for linux)
-python 3.11.11
-nvidia-container-toolkit
-mongo compass or mongodb-tools
+-docker
 
-CUDA capable GPU
+-docker compose
+
+-docker buildx (needed for linux)
+
+-python 3.11.11
+
+-nvidia-container-toolkit
+
+-mongo compass or mongodb-tools
+
+-CUDA capable GPU
 
 # Setup
 Update:16/3/2025: https://subway.com.my/find-a-subway is down at the moment, it might not be possible to locally setup until it is up
 
-## via docker(setup is much more complicated because of nvidia-container-toolkit setup)-
+## Via docker(setup is much more complicated because of nvidia-container-toolkit setup)-
 Ensure all the requirements are installed on your computer
 Request skyler for the setup files
 From the setup files, merge the folders within /setup/env with the working directory, the result being all service source code containing .env
@@ -50,7 +55,7 @@ go to host.docker.internal:8004/docs# and perform a get request at /scrape
 you can now connect to the website with http://0.0.0.0/8080
 
 
-## manually
+## Manually
 the only requirements are python 3.11.11, and you would need to have your own way of serving mongodb
 Ensure all the requirements are installed on your computer
 Request skyler for the setup files
