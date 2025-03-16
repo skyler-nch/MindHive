@@ -62,7 +62,7 @@ you can now connect to the website with http://0.0.0.0/8080
 
 
 ## Manually
-the only requirements are python 3.11.11, and you would need to have your own way of serving mongodb
+the only requirements are python 3.11.11, and you would need to have your own way of serving mongodb and redis
 
 Ensure all the requirements are installed on your computer
 
