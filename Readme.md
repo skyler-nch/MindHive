@@ -25,7 +25,7 @@ In regards to local hosting LLMs, it is more of a personal preference, I find th
 # Disclaimer
 Since this is locally hosted, and since the LLM does take up more than half of the VRAM available in my PC, there might be times where the chatbot just does not answer, if its so that means I've probably temporarily turned it off. Do not hesitate to contact me so that i can spin it right back up. A simple query should take no more than 3 seconds to return.
 
-The code quality here is not my proudest, lack of consistency, type hints and documentations, proper implementations of PP, and so on. I apologize for all these, and hope that it can be overlooked. since this is CICD, ill probably update and clean the code when i have the time.
+The code quality here is not my proudest, lack of consistency, type hints and documentations, proper implementations of PP, and so on. I apologize for all these, and hope that it can be overlooked for the time being. Since this is CICD, ill probably update and clean the code when i have the time.
 
 There are also a number of bugs that i have found while coding that i did not have the time to fix, these are marked with "TODO:" within the code itself.
 
