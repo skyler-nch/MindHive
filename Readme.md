@@ -45,11 +45,17 @@ Update:16/3/2025: https://subway.com.my/find-a-subway is down at the moment, it 
 
 ## Via docker(setup is much more complicated because of nvidia-container-toolkit setup)-
 Ensure all the requirements are installed on your computer
+
 Request skyler for the setup files
+
 From the setup files, merge the folders within /setup/env with the working directory, the result being all service source code containing .env
+
 Run setup.sh
+
 go to your MongoDB at host.docker.internal:27017 and create a database called "MindHive", the username and password is skyler,skyler, respectively
+
 create a empty called Routes collection and import the Routes.json
+
 go to host.docker.internal:8004/docs# and perform a get request at /scrape
 
 you can now connect to the website with http://0.0.0.0/8080
@@ -57,23 +63,38 @@ you can now connect to the website with http://0.0.0.0/8080
 
 ## Manually
 the only requirements are python 3.11.11, and you would need to have your own way of serving mongodb
+
 Ensure all the requirements are installed on your computer
+
 Request skyler for the setup files
+
 From the setup files, merge the folders within /setup/env with the working directory, the result being all service source code containing .env
+
 go to your MongoDB at host.docker.internal:27017 and create a database called "MindHive", the username and password is skyler,skyler, respectively
+
 create a empty called Routes collection and import the Routes.json
+
 run every service up
+
 -backend services all uses fastapi run main.py --port [port number] check port usage section for assignment
+
 -front end service simply uses python main.py
+
 go to localhost:8004/docs# and perform a get request at /scrape
 
 
 ## Port Usage
 
 Front-End: 8080
+
 API Gateway: 3000
+
 Connection Pool: 3001
+
 Backend: 3002
+
 LLM-Qwen: 3003
+
 Scraping Spider: 3004
+
 
